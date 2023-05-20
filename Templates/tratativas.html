@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tratativas</title>
+    <style>
+    nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #f1f1f1;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+nav li a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+}
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table th, table td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        table th {
+            background-color: #f2f2f2;
+        }
+
+        table tr:hover {
+            background-color: #f5f5f5;
+        }
+    </style>
+</head>
+
+  <nav>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/cadastro">Cadastro</a></li>
+      <li><a href="/tratativas">Tratativas</a></li>
+    </ul>
+  </nav>
+
+<body>
+    <h1>Tratativas</h1>
+    <table>
+          <tr>
+            <th>Email</th>
+            <th>Status</th>
+          </tr>
+          {% for webhook in webhooks %}
+              <tr>
+                <td>{{ webhook.email }}</td>
+                <td>{{ webhook.status }}</td>
+              </tr>
+          {% endfor %}
+    </table>
+</body>
+</html>
