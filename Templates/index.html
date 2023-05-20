@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>API Recuperação</title>
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  color: #FF0000;
+  margin-bottom: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #f1f1f1;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+nav li a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+h2 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+ul li {
+  margin-bottom: 20px;
+}
+
+ul li h3 {
+  color: #333;
+}
+
+ul li p {
+  color: #555;
+}
+
+
+  </style>
+</head>
+<body>
+  <h1>API Recuperação</h1>
+
+  <nav>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/cadastro">Cadastro</a></li>
+      <li><a href="/tratativas">Tratativas</a></li>
+    </ul>
+  </nav>
+
+
+  <h2>Funções do Site</h2>
+  <ul>
+    <li>
+      <h3>Recebimento de Webhooks</h3>
+      <p>
+        A função principal do site é receber os webhooks do sistema de pagamento e tomar decisões com base no status do pagamento.
+      </p>
+    </li>
+    <li>
+      <h3>Liberar Acesso ao Curso</h3>
+      <p>
+        Quando um pagamento é aprovado, o sistema deve liberar o acesso do cliente ao curso.
+      </p>
+    </li>
+    <li>
+      <h3>Enviar Mensagem de Boas Vindas</h3>
+      <p>
+        Após a aprovação do pagamento, o sistema deve enviar uma mensagem de boas vindas ao cliente.
+      </p>
+    </li>
+    <li>
+      <h3>Enviar Mensagem de Pagamento Recusado</h3>
+      <p>
+        Se um pagamento for recusado, o sistema deve enviar uma mensagem ao cliente informando sobre a recusa.
+      </p>
+    </li>
+    <li>
+      <h3>Remover Acesso ao Curso</h3>
+      <p>
+        Se um pagamento for reembolsado, o sistema deve remover o acesso do cliente ao curso.
+      </p>
+    </li>
+    <li>
+      <h3>Registro de Webhooks e Tratativas</h3>
+      <p>
+        Todos os webhooks recebidos e as ações realizadas pelo sistema devem ser registrados para futuras consultas.
+      </p>
+    </li>
+    <li>
+      <h3>Autenticação de Login</h3>
+      <p>
+        Acesso ao site é permitido apenas para usuários autenticados. A criação de conta requer o token de autorização.
+      </p>
+    </li>
+    <li>
+      <h3>Tela de Tratativas por Usuário</h3>
+      <p>
+        Os usuários têm acesso a uma tela onde podem ver todas as tratativas realizadas pelo sistema para cada usuário.
+      </p>
+    </li>
+    <li>
+      <h3>Pesquisar Tratativas</h3>
+      <p>
+        Os usuários podem pesquisar tratativas por usuário e visualizar o histórico das ações realizadas pelo sistema para cada usuário.
+      </p>
+    </li>
+  </ul>
+</body>
+</html>
